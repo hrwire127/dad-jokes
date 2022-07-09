@@ -1,0 +1,131 @@
+.Sidebar {
+  margin: 0;
+  height: 600px;
+  width: 350px;
+  background-color: rgb(85, 101, 243);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+
+  z-index: 1;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.39);
+}
+.Pre,
+.Sub {
+  color: white;
+  font-size: 60px;
+  display: inline;
+}
+.Sub {
+  font-weight: 200;
+}
+
+.Icon {
+  font-size: 140px;
+  margin: 3px 10px;
+  z-index: 2;
+  transition: font-size 0.1s;
+}
+.Icon:hover {
+  font-size: 150px;
+  margin: -3px 3px;
+}
+.Shadow {
+  height: 210px;
+  width: 210px;
+
+  background-color: rgb(85, 101, 243);
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.39);
+  border-radius: 200px;
+}
+
+.Ctn {
+  width: 210px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Btn {
+  width: 200px;
+  height: 70px;
+  border: none;
+  font-size: 40px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(179, 229, 252, 1) 0%,
+    rgba(179, 229, 252, 1) 50%,
+    rgba(240, 98, 146, 1) 50%,
+    rgba(240, 98, 146, 1) 100%
+  );
+  box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.39);
+  transition: width 0.1s, height 0.1s, font-size 0.1s;
+}
+
+.L {
+  padding: 5px;
+  display: inline;
+  color: rgba(240, 98, 146, 1);
+}
+
+.R {
+  padding: 5px;
+  display: inline;
+  color: rgba(179, 229, 252, 1);
+}
+
+.Btn:hover {
+  width: 210px;
+  height: 80px;
+  font-size: 43px;
+}
+
+.Btn:active {
+  opacity: 50%;
+  border: 2px solid rgb(55, 55, 119);
+}
+
+.Waiting {
+  color: white;
+  width: 200px;
+  height: 70px;
+
+  border: none;
+  font-size: 40px;
+  border-radius: 16px;
+  background-color: rgb(121, 121, 121);
+  box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.39);
+}
+.Content {
+  display: flex;
+}
+.Container {
+  align-self: center;
+  width: 850px;
+  height: 550px;
+  background-color: white;
+  box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.39);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.loader {
+    margin: auto;
+    margin-top: 150px;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

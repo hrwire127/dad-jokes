@@ -1,0 +1,80 @@
+.Joke {
+  margin: -1px auto;
+  width: 830px;
+  height: 80px;
+  border: 2px solid rgba(0, 0, 0, 0.274);
+  display: flex;
+  gap: 10px;
+}
+
+.Voting {
+  width: 120px;
+  gap: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Vote {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Score {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 200px;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.212);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Score:hover {
+  font-size: 20px;
+}
+.VoteUp,
+.VoteDown {
+  display: inline;
+  height: 10px;
+  border: none;
+  font-weight: 600;
+  background-color: rgba(245, 222, 179, 0);
+}
+.VoteUp:hover,
+.VoteDown:hover {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.VoteUp {
+  color: rgb(76, 179, 35);
+}
+
+.VoteDown {
+  color: rgb(253, 80, 80);
+}
+
+h4 {
+  flex-basis: 100%;
+  margin: auto;
+}
+
+.Rating {
+  font-size: 50px;
+  background-color: rgba(245, 222, 179, 0);
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.363);
+}
+
+.Rating:hover {
+  font-size: 60px;
+  margin: -3px 3px;
+}
+
+.Rcon {
+  width: 80px;
+  height: 80px;
+}
